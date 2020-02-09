@@ -8,8 +8,9 @@
   <body>
     <div id="app">
       {{ message }}
-      <button v-on:click="counter += 1">Add 1</button>
+      <button v-on:click="counter *=2">Multiply</button>
       <p>The button has been clicked {{ counter }} times.<p>
+        <p> {{ username }}</p>
     </div>
     <script src="dist/main.js" type="text/javascript"></script>
   </body>
