@@ -3,11 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>My Vue Project</title>
+    <title>Disaster Preperation</title>
+    <style type="text/css" media="screen">
+    #dev1 {
+      background-image: url(src/Tornado.jpg);
+    }
+    #dev2 {
+      background-image: url(src/Hurricane.jpg);
+    }
+    #dev3 {
+      background-image: url(src/Earthquake.jpg);
+    }
+    #dev4 {
+      background-image: url(src/Tsunami.jpg);
+    }
+    #dev5 {
+      background-image: url(src/Wildfire.jpg);
+    }
+    #dev6 {
+      background-image: url(src/Volcano.jpg);
+    }
+    #dev7 {
+      background-image: url(src/Flood.jpg);
+    }
+    #dev8 {
+      background-image: url(src/Blizzard.jpg);
+    }
+    #dev9 {
+      background-image: url(src/Drought.jpg);
+    }
+    </style>
   </head>
   <body>
+    <div id="app">
     <header>
-      <h1> <span>Disaster Preperation</span></h1>
+      <h1> <span class="DisasterPreperation">Disaster Preperation</span>, {{ userName }}!</h1>
       <nav>
         <ul>
           <div id="div1">
@@ -46,5 +76,6 @@
     <footer>
       <p>2020 Disaster Preperation &copy Katherin Daggett</p>
     </footer>
+  </div>
   </body>
 </html>
