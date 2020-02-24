@@ -4,78 +4,140 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Disaster Preperation</title>
-    <style type="text/css" media="screen">
-    #dev1 {
-      background-image: url(src/Tornado.jpg);
+    <style>
+    * {
+      box-sizing: border-box;
     }
-    #dev2 {
-      background-image: url(src/Hurricane.jpg);
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
     }
-    #dev3 {
-      background-image: url(src/Earthquake.jpg);
+
+    h1 {
+      font-weight: bold;
+      font-size: 2em;
     }
-    #dev4 {
-      background-image: url(src/Tsunami.jpg);
+
+    h2 {
+      background-color: #0D232E;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
     }
-    #dev5 {
-      background-image: url(src/Wildfire.jpg);
+
+    nav {
+      float: left;
+      width: 30%;
+      background: #ccc;
+      padding: 20px;
     }
-    #dev6 {
-      background-image: url(src/Volcano.jpg);
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
     }
-    #dev7 {
-      background-image: url(src/Flood.jpg);
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
     }
-    #dev8 {
-      background-image: url(src/Blizzard.jpg);
+
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
     }
-    #dev9 {
-      background-image: url(src/Drought.jpg);
+
+    footer {
+      background-color: #0D232E;
+      padding: 10px;
+      text-align: center;
+      color: white;
     }
-    </style>
+
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
   </head>
   <body>
     <div id="app">
     <header>
-      <h1> <span class="DisasterPreperation">Disaster Preperation</span>, {{ userName }}!</h1>
+      <h2>Disaster Perperation</h2>
+    </header>
+    <section>
       <nav>
         <ul>
-          <div id="div1">
-            <a>Tornado</a>
-          </div>
-          <div id="div2">
-            <a>Hurricane</a>
-          </div>
-          <div id="div3">
-            <a>Earthquake</a>
-          </div>
-          <div id="div4">
-            <a>Tsunami</a>
-          </div>
-          <div id="div5">
-            <a>Wildfire<a/>
-          </div>
-          <div id="div6">
-            <a>Volcano</a>
-          </div>
-          <div id="div7">
-            <a>Flood</a>
-          </div>
-          <div id="div8">
-            <a>Blizzard</a>
-          </div>
-          <div id="div9">
-            <a>Drought</a>
-          </div>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href="tornado.html">Tornado</a></li>
+          <li><a href='hurricane.html'>Hurricane</a></li>
+          <li><a href='earthquake.html'>Earthquake</a></li>
+          <li><a href='tsunami.html'>Tsunami</a></li>
+          <li><a href='wildfire.html'>Wildfire</a></li>
+          <li><a href='volcano.html'>Volcano</a></li>
+          <li><a href='flood.html'>Flood</a></li>
+          <li><a href='blizzard.html'>Blizzard</a></li>
+          <li><a href='drought.html'>Drought</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-    <script src="dist/main.js" type="text/javascript"></script>
-    </main>
+      <article>
+        <h1>Disaster Preperation Kit</h1>
+          <p>A basic emergency supply kit could include the following recommended items:</p>
+          <pre>-Water: one gallon of water per person per day for at least three days,for drinking and sanitation.</pre>
+          <pre>-Food: at least a three-day supply of non-perishable food.</pre>
+          <pre>-Battery: powered or hand crank radio and a NOAA Weather Radio with tone alert.</pre>
+          <pre>-Flashlight</pre>
+          <pre>-First aid kit</pre>
+          <pre>-Extra batteries</pre>
+          <pre>-Whistle to signal for help.</pre>
+          <pre>-Dust mask to help filter contaminated air and plastic sheeting and duct tape to shelter-in-place.</pre>
+          <pre>-Moist towelettes, garbage bags and plastic ties for personal sanitation.</pre>
+          <pre>-Wrench or pliers to turn off utilities.</pre>
+          <pre>-Manual can opener for food.</pre>
+          <pre>-Local maps</pre>
+          <pre>-Cell phone with chargers and a backup battery.</pre>
+          <br></br>
+
+          <p>Additional Emergency Supplies</p>
+          <pre>-Prescription medications</pre>
+          <pre>-Non-Prescription medications</pre>
+          <pre>-Glasses and contact lens solution.</pre>
+          <pre>-Infant formula, bottles, diapers, wipes, diaper rash cream.</pre>
+          <pre>-Pet food and extra water for your pets.</pre>
+          <pre>-Cash or traveler's checks.</pre>
+          <pre>-Important family documents such as copies of insurance policies, identification and back account records saved electronically or in a <br> waterproof portable container.</pre>
+          <pre>-Sleeping bag or warm blanket for each person.</pre>
+          <pre>-Complete change of clothing appropriate for your climate and sturdy shoes.</pre>
+          <pre>-Household chlorine bleach and medicine dropper to disinfect water.</pre>
+          <pre>-Fire extinguisher</pre>
+          <pre>-Matches in a waterproof container.</pre>
+          <pre>-Feminine supplies and personal hygiene items.</pre>
+          <pre>-Mess kits, paper cups, plates, paper towels and plastic utensils.</pre>
+          <pre>-Paper and pencil</pre>
+          <pre>-Books, games, puzzles or other activities for children.</pre>
+          <br></br>
+
+          <p>Maintaining your kit</p>
+          <pre>-Keep canned food in a cool, dry place.</pre>
+          <pre>-Store based food in tightly closed plastic or metal containers.</pre>
+          <pre>-Replace expired items as needed.</pre>
+          <pre>-Re-think your needs every year and update your kit as your family's needs change.</pre>
+          <br></br>
+
+          <p>Kit Storage Locations</p>
+          <pre>-Home: Keep this kit is a designated place and have it ready in case you have to leave your home quickly. Make sure all family members <br> know where the kit is kept.</pre>
+          <pre>-Work: Be prepared to shelter at work for at least 24 hours. Your work kit should include food, water and other necessities like <br> medicine, as well as comfortable walking shoes, stored in a "grab and go" case.</pre>
+          <pre>-Vehicle: In case you are stranded, keep a kit of emergency supplies in your car.</pre>
+      </article>
+    </section>
     <footer>
-      <p>2020 Disaster Preperation &copy Katherin Daggett</p>
+      <p>&copy; 2020 Disaster Preperation Katherin Daggett</p>
     </footer>
-  </div>
   </body>
 </html>

@@ -4,8 +4,7 @@ import "./style.css";
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Chaos!',
-    userName: 'Katie'
+    message: 'Hello Chaos!'
   }
 });
 

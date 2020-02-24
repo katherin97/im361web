@@ -1,37 +1,7 @@
-html {
-  background-color: #0D232E;
-}
-
-header {
-  color: white;
-  text-align: center;
-  font-size: 2em;
-}
-
-body{
-  font-size: 1em;
-}
-
-a {
-  font-weight: bold;
-  color: white;
-}
-
-div {
-  background-color: #0D232E;
-  text-align: center;
-  border-radius: 25px;
-  width: auto;
-  border: 4px solid white;
-  padding: 50px;
-  margin: 15px;
-}
-
 a:hover {
-  background-color: gray;
+  color: gray;
 }
 
-footer {
-  font-size: 1em;
-  color: white;
+a:visited {
+  color: purple;
 }
