@@ -5,133 +5,133 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Disaster Preperation</title>
     <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 2em;
-    }
-
-    h2 {
-      background-color: #0D232E;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
-
-    nav {
-      float: left;
-      width: 30%;
-      background: #ccc;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    article {
-      float: left;
-      padding: 20px;
-      width: 70%;
-      background-color: #f1f1f1;
-    }
-
-    section:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    footer {
-      background-color: #0D232E;
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
       }
-    }
+
+      h1 {
+        font-weight: bold;
+        font-size: 2em;
+      }
+
+      h2 {
+        background-color: #0D232E;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #0D232E;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+      }
+
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: #0D232E;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
   </style>
   </head>
   <body>
+    <div id="app">
     <header>
-      <h2>Disaster Preperation</h2>
+      <h2>Disaster Preparation</h2>
     </header>
     <section>
-      <nav>
         <ul>
           <li><a href='index.html'>Home</a></li>
           <li><a href="tornado.html">Tornado</a></li>
           <li><a href='hurricane.html'>Hurricane</a></li>
           <li><a href='earthquake.html'>Earthquake</a></li>
-          <li><a href='tsunami.html'>Tsunami</a></li>
+          <li><a class="active" href='tsunami.html'>Tsunami</a></li>
           <li><a href='wildfire.html'>Wildfire</a></li>
           <li><a href='volcano.html'>Volcano</a></li>
           <li><a href='flood.html'>Flood</a></li>
           <li><a href='blizzard.html'>Blizzard</a></li>
           <li><a href='drought.html'>Drought</a></li>
         </ul>
-      </nav>
+      <div style="margin-left:25%;padding:1px 16px;height:100px;">
       <article>
         <h1>Tsunamis</h1>
-          <p>What are tsunamis?</p>
-          <pre>Tsunamis, also known as sesimic sea waves, are a series of enormous waves that are created by an underwater disturbance, such</pre>
-          <pre>as an earthquake, landslide, volcanic eruption, or meteorite. A tsunami can travel for hundreds of miles per hour in open</pre>
-          <pre>ocean and smash into land with waves as high as 100 feet, or even more.</pre>
+          <h3>What are tsunamis?</h3>
+          <p>Tsunamis, also known as sesimic sea waves, are a series of enormous waves that are created by an underwater disturbance, such as an earthquake, landslide, volcanic eruption, or meteorite. A tsunami can travel for hundreds of miles per hour in open ocean and smash into land with waves as high as 100 feet, or even more.</p>
           <br></br>
 
-          <p>Where are they common?</p>
-          <pre>Tsunamis can occur in all large bodies of water, but are more common in the Pacific Ocean. This is not only due to its size,</pre>
-          <pre>but also due to the series of mountains, deep-ocean trenches, and the "ring of fire" (off the coastsd of Kamchatka, Japan; the</pre>
-          <pre>Kuril Islands; Alaska and South America).</pre>
+          <h3>Where are they common?</h3>
+          <p>Tsunamis can occur in all large bodies of water, but are more common in the Pacific Ocean. This is not only due to its size, but also due to the series of mountains, deep-ocean trenches, and the "ring of fire" (off the coastsd of Kamchatka, Japan; the Kuril Islands; Alaska and South America).</p>
           <br></br>
 
-          <p>How are they detected?</p>
-          <pre>Tsuanmis are detected using open-ocean buoys and by coastal tide gages. The information from these instruments are reported back</pre>
-          <pre>in real time to tsunami warning centers (one in Alaska and another in Hawaii). Warning centers also use earthquake (seismic) data</pre>
-          <pre>to estimate the strength of the tsunamis from the character of an earthquake, since seismic waves travel faster than tsunamis.</pre>
+          <h3>How are they detected?</h3>
+          <p>Tsuanmis are detected using open-ocean buoys and by coastal tide gages. The information from these instruments are reported back in real time to tsunami warning centers (one in Alaska and another in Hawaii). Warning centers also use earthquake (seismic) data to estimate the strength of the tsunamis from the character of an earthquake, since seismic waves travel faster than tsunamis.</p>
           <br></br>
 
         <h1>How to Stay Safe when a Tsunai Threatens</h1>
-          <p>Prepare Now</p>
-          <pre>-If you live near, or regularly visit a castal area, learn about the risk of tsuanmis in the area. Some at-risk communities have</pre>
-          <pre> maps with evacuation zones and routes.</pre>
-          <pre>-Learn the signs if a potential tsunami, such as an earthquake, a loud roar from the ocean, or unusual ocean behavior, such as a</pre>
-          <pre> sudden rise or wall of water, or a sudden drain of water.</pre>
-          <pre>-Know and practice community evacuation plans and map out your routes from home, work, and play. Pick shelters 100 feet or more</pre>
-          <pre> above sea level, and at least one mile inland.</pre>
-          <pre>-Consider earthquake insurance and a flood insurance policy.</pre>
+          <h3>Prepare Now</h3>
+          <p>-If you live near, or regularly visit a castal area, learn about the risk of tsuanmis in the area. Some at-risk communities have maps with evacuation zones and routes.</p>
+          <p>-Learn the signs if a potential tsunami, such as an earthquake, a loud roar from the ocean, or unusual ocean behavior, such as a sudden rise or wall of water, or a sudden drain of water.</p>
+          <p>-Know and practice community evacuation plans and map out your routes from home, work, and play. Pick shelters 100 feet or more above sea level, and at least one mile inland.</p>
+          <p>-Consider earthquake insurance and a flood insurance policy.</p>
           <br></br>
 
-          <p>Survive During</p>
-          <pre>-If you are in a tsunami area and there is an earthquake, first protect yourself from the earthquake.</pre>
-          <pre>-When the shaking stops, if there are natural signs or official warnings of a tsunami, then move immediately to a safe place as</pre>
-          <pre> high and as far inland as possible. Listen to the authorities, but do not wait for tsunami warnings and evacuation orders.</pre>
-          <pre>-If you are outside of the tsunami hazard zone and recieve a warning, stay where you are unless officials tell yoou otherwise.</pre>
-          <pre>-If you are in the water, then grab onto soemthing that floats, such as a raft, tree trunck, or door.</pre>
-          <pre>-If you are in a boat, then face the direction of the waves and head out to sea. If you are in a harbor, then go inland.</pre>
+          <h3>Survive During</h3>
+          <p>-If you are in a tsunami area and there is an earthquake, first protect yourself from the earthquake.</p>
+          <p>-When the shaking stops, if there are natural signs or official warnings of a tsunami, then move immediately to a safe place as high and as far inland as possible. Listen to the authorities, but do not wait for tsunami warnings and evacuation orders.</p>
+          <p>-If you are outside of the tsunami hazard zone and recieve a warning, stay where you are unless officials tell yoou otherwise.</p>
+          <p>-If you are in the water, then grab onto soemthing that floats, such as a raft, tree trunck, or door.</p>
+          <p>-If you are in a boat, then face the direction of the waves and head out to sea. If you are in a harbor, then go inland.</p>
           <br></br>
 
-          <p>Be Safe After</p>
-          <pre>-Listen to local alerts and authorities for information on areas to avoid and shelter locations.</pre>
-          <pre>-Avoid wading in floodwater, which can contain dangerous debris. Water may also be deeper than it appears.</pre>
-          <pre>-Be aware of the risk of electocution. Underground or downed power lines can electrically charge water.</pre>
-          <pre>-Stay away from damaged buildings, roads, and bridges.</pre>
-          <pre>-Document property damage with photographs. Conduct an inventory and contact your insurance company for assistance.</pre>
-          <pre>-Save phone calls for emergencies.</pre>
+          <h3>Be Safe After</h3>
+          <p>-Listen to local alerts and authorities for information on areas to avoid and shelter locations.</p>
+          <p>-Avoid wading in floodwater, which can contain dangerous debris. Water may also be deeper than it appears.</p>
+          <p>-Be aware of the risk of electocution. Underground or downed power lines can electrically charge water.</p>
+          <p>-Stay away from damaged buildings, roads, and bridges.</p>
+          <p>-Document property damage with photographs. Conduct an inventory and contact your insurance company for assistance.</p>
+          <p>-Save phone calls for emergencies.</p>
       </article>
     </section>
     <footer>

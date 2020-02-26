@@ -5,73 +5,79 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Disaster Preperation</title>
     <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 2em;
-    }
-
-    h2 {
-      background-color: #0D232E;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
-
-    nav {
-      float: left;
-      width: 30%;
-      background: #ccc;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    article {
-      float: left;
-      padding: 20px;
-      width: 70%;
-      background-color: #f1f1f1;
-    }
-
-    section:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    footer {
-      background-color: #0D232E;
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
       }
-    }
+
+      h1 {
+        font-weight: bold;
+        font-size: 2em;
+      }
+
+      h2 {
+        background-color: #0D232E;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #0D232E;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+      }
+
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: #0D232E;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
   </style>
   </head>
   <body>
+    <div id="app">
     <header>
-      <h2>Disaster Preperation</h2>
+      <h2>Disaster Preparation</h2>
     </header>
     <section>
-      <nav>
         <ul>
           <li><a href='index.html'>Home</a></li>
           <li><a href="tornado.html">Tornado</a></li>
@@ -82,91 +88,85 @@
           <li><a href='volcano.html'>Volcano</a></li>
           <li><a href='flood.html'>Flood</a></li>
           <li><a href='blizzard.html'>Blizzard</a></li>
-          <li><a href='drought.html'>Drought</a></li>
+          <li><a class="active" href='drought.html'>Drought</a></li>
         </ul>
-      </nav>
+      <div style="margin-left:25%;padding:1px 16px;height:100px;">
       <article>
         <h1>Droughts</h1>
-          <p>What are droughts?</p>
-          <pre>Droughts are periods of abnormally dry and precipitation-less weather. A misconception is that droughts are brought on by periods of no</pre>
-          <pre>rain or snow, and while this is common, the onset of a drought may be less noticeable. If snow or rain is in lighter amounts, such as a</pre>
-          <pre>drizzle here and flurries there, instead of a steady rain or snow showers, this can also be an indication a drought is on its way.</pre>
+          <h3>What are droughts?</h3>
+          <p>Droughts are periods of abnormally dry and precipitation-less weather. A misconception is that droughts are brought on by periods of no rain or snow, and while this is common, the onset of a drought may be less noticeable. If snow or rain is in lighter amounts, such as a drizzle here and flurries there, instead of a steady rain or snow showers, this can also be an indication a drought is on its way.</p>
           <br></br>
 
-          <p>How droughts hurt</p>
-          <pre> - Economic Impacts: this includes the loss of timber, agriculture, and fisheries. This can cause an increase in food prices, and in</pre>
-          <pre>   less developed countries, famine can become a problem.</pre>
-          <pre> - Social Impacts: increased chance of conflict over commodities, fertile land, and water resources. It can also include abandonment of</pre>
-          <pre>   cultural traditions, loss of homelands, changes in lifestyle, and increased chance of health risks.</pre>
-          <pre> - Environmental Impacts: loss is species biodiversity, migration changes, reduced air quality, and increased soil erosion.</pre>
+          <h3>How droughts hurt</h3>
+          <p> - Economic Impacts: this includes the loss of timber, agriculture, and fisheries. This can cause an increase in food prices, and in less developed countries, famine can become a problem.</p>
+          <p> - Social Impacts: increased chance of conflict over commodities, fertile land, and water resources. It can also include abandonment of cultural traditions, loss of homelands, changes in lifestyle, and increased chance of health risks.</p>
+          <p> - Environmental Impacts: loss is species biodiversity, migration changes, reduced air quality, and increased soil erosion.</p>
           <br></br>
 
-          <p>Types of droughts</p>
-          <pre> - Hydrological Drought: watersheds experience depleted amounts of avaliable water. Lack of water in rivers and resevoirs can impact</pre>
-          <pre>   hydroelectric power companies, farmers, wildlife, and communities.</pre>
-          <pre> - Meterological Drought: a lack of precipitation is the most common definition of a drought.</pre>
-          <pre> - Agricultural Drought: when soil moisture becomes a problem. Shortages in precipication, changes in evapotranspiration, and reduced</pre>
-          <pre>   ground water levels can create stress and poblems for crops.</pre>
+          <h3>Types of droughts</h3>
+          <p> - Hydrological Drought: watersheds experience depleted amounts of avaliable water. Lack of water in rivers and resevoirs can impact hydroelectric power companies, farmers, wildlife, and communities.</p>
+          <p> - Meterological Drought: a lack of precipitation is the most common definition of a drought.</p>
+          <p> - Agricultural Drought: when soil moisture becomes a problem. Shortages in precipication, changes in evapotranspiration, and reduced ground water levels can create stress and poblems for crops.</p>
           <br></br>
 
         <h1>How to Stay Safe when a Drought Threatens</h1>
-          <p>Indoor Water Conservation Tips Prior to a Drought</p>
-          <pre>General</pre>
-          <pre> - Never pour water down the drain when there are may be another use for it.</pre>
-          <pre> - Repair dripping daucets by replacing washers.</pre>
-          <pre> - Check all plumbing for leaks and have any leaks repaired by a plumber.</pre>
-          <pre> - Retrofit all household faucets by installing aerators with flow restrictors.</pre>
-          <pre> - Install an instant hot water heater in your sink.</pre>
-          <pre> - Insulate a water-softening systen only when the minterals in the water would damage your pipes. Turn the softener off while on vacation.</pre>
-          <pre> - Choose appliances that are more energy and water efficient.</pre>
-          <pre>Bathroom</pre>
-          <pre> - Consider purchasing a low-volume toilet that uses less than half the water of older models.</pre>
-          <pre> - Install a taoilet displacement device to cut down on the amount of water needed to flush. Place a one-gallon just of water into the tank</pre>
-          <pre>   to displace toilet flow.</pre>
-          <pre> - Replace your shower head with an ultra-low-flow version.</pre>
-          <pre>Kitchen</pre>
-          <pre> - Start a composte pile as an alternate method of disposing of food waste of simply dispse of food in the garbage.</pre>
+          <h3>Indoor Water Conservation Tips Prior to a Drought</h3>
+          <p>General</p>
+          <p> - Never pour water down the drain when there are may be another use for it.</p>
+          <p> - Repair dripping daucets by replacing washers.</p>
+          <p> - Check all plumbing for leaks and have any leaks repaired by a plumber.</p>
+          <p> - Retrofit all household faucets by installing aerators with flow restrictors.</p>
+          <p> - Install an instant hot water heater in your sink.</p>
+          <p> - Insulate a water-softening systen only when the minterals in the water would damage your pipes. Turn the softener off while on vacation.</p>
+          <p> - Choose appliances that are more energy and water efficient.</p>
+          <p>Bathroom</p>
+          <p> - Consider purchasing a low-volume toilet that uses less than half the water of older models.</p>
+          <p> - Install a taoilet displacement device to cut down on the amount of water needed to flush. Place a one-gallon just of water into the tank<   to displace toilet flow.</p>
+          <p> - Replace your shower head with an ultra-low-flow version.</p>
+          <p>Kitchen</p>
+          <p> - Start a composte pile as an alternate method of disposing of food waste of simply dispse of food in the garbage.</p>
           <br></br>
 
-          <p>Outdoor Water Conservation Tips Prior to a Drought</p>
-          <pre>General</pre>
-          <pre> - Check your well pump periodically. If the automatic pump turns on and off while water is not being used, you have a leak.</pre>
-          <pre> - Plant native and/or drought-tolerant grasses, ground covers, shrubs, and trees. Group plants together based on similar water needs.</pre>
-          <pre> - Install irrigation devices that are the most water efficient for each use, such as micro and drip irrigation, and soaker hoses.</pre>
-          <pre> - Use mulch to retain moisture in the soil.</pre>
-          <pre> - Avoid purchasing recreational water toys that require a constant stream of water.</pre>
-          <pre> - Avoid installing ornamental water features unless they use recirculated water.</pre>
-          <pre> - Consider rainwater harvesting where pratical.</pre>
-          <pre> - Contact your local water provider for information and assistance.</pre>
+          <h3>Outdoor Water Conservation Tips Prior to a Drought</h3>
+          <p>General</p>
+          <p> - Check your well pump periodically. If the automatic pump turns on and off while water is not being used, you have a leak.</p>
+          <p> - Plant native and/or drought-tolerant grasses, ground covers, shrubs, and trees. Group plants together based on similar water needs.</p>
+          <p> - Install irrigation devices that are the most water efficient for each use, such as micro and drip irrigation, and soaker hoses.</p>
+          <p> - Use mulch to retain moisture in the soil.</p>
+          <p> - Avoid purchasing recreational water toys that require a constant stream of water.</p>
+          <p> - Avoid installing ornamental water features unless they use recirculated water.</p>
+          <p> - Consider rainwater harvesting where pratical.</p>
+          <p> - Contact your local water provider for information and assistance.</p>
           <br></br>
 
-          <p>Indoor Water Conservation Tips While in a Drought</p>
-          <pre>Bathroom</pre>
-          <pre> - Avoid flushing the toilet unnecessarily. Dispose of tissues, insects, and other similar waste in the trash rather than the toliet.</pre>
-          <pre> - Avoid taking baths-take short showers-turn on the water only to get wet and lather, and then again to rinse off.</pre>
-          <pre> - Avoid letting the water run while brishing your teeth, washing your face or shaving.</pre>
-          <pre> - Place a bucket in the shower to catch excess water for watering plants.</pre>
-          <pre>Kitchen</pre>
-          <pre> - Operate automatic dishwashers only when they are fully loaded.</pre>
-          <pre> - Hand wash dishes by filling two containers-one with soapy water and the other with rinse water containing a small amount of chlroine bleach.</pre>
-          <pre> - Clean vegetables in a pan filled with water rather then running water from the tap.</pre>
-          <pre> - Store drinking water in the refrigerator. Do not let the tap run while waiting for water to cool down.</pre>
-          <pre> - Avoid wasting water waiting for it to get hot, capture it for other uses.</pre>
+          <h3>Indoor Water Conservation Tips While in a Drought</h3>
+          <p>Bathroom</p>
+          <p> - Avoid flushing the toilet unnecessarily. Dispose of tissues, insects, and other similar waste in the trash rather than the toliet.</p>
+          <p> - Avoid taking baths-take short showers-turn on the water only to get wet and lather, and then again to rinse off.</p>
+          <p> - Avoid letting the water run while brishing your teeth, washing your face or shaving.</p>
+          <p> - Place a bucket in the shower to catch excess water for watering plants.</p>
+          <p>Kitchen</p>
+          <p> - Operate automatic dishwashers only when they are fully loaded.</p>
+          <p> - Hand wash dishes by filling two containers-one with soapy water and the other with rinse water containing a small amount of chlroine bleach.</p>
+          <p> - Clean vegetables in a pan filled with water rather then running water from the tap.</p>
+          <p> - Store drinking water in the refrigerator. Do not let the tap run while waiting for water to cool down.</p>
+          <p> - Avoid wasting water waiting for it to get hot, capture it for other uses.</p>
           <br></br>
 
-          <p>Outdoor Water Conservation Tips While in a Drought</p>
-          <pre>Lawn Care</pre>
-          <pre> - Avoid over watering your lawn and water only when needed.</pre>
-          <pre> - Check the soil moisture levels with a soul probe, spade, or large screwdriver. You don't need to water if the soil is still moist.</pre>
-          <pre> - If your lawn does require watering, do so when the temperature in cool.</pre>
-          <pre> - Water in several short sessions, rather than one large one, in order for your lawn to better absorb moisture and avoid runoff.</pre>
-          <pre> - Use a broom or blower instead of a hose to clean leaves and debris from your driveway or sidewalk.</pre>
-          <pre> - Avoid leaving sprinklers or hoses unatteneded.</pre>
-          <pre> - In extreme drought, allow lawns to die in favor of preserving trees and large shrubs.</pre>
+          <h3>Outdoor Water Conservation Tips While in a Drought</h3>
+          <p>Lawn Care</p>
+          <p> - Avoid over watering your lawn and water only when needed.</p>
+          <p> - Check the soil moisture levels with a soul probe, spade, or large screwdriver. You don't need to water if the soil is still moist.</p>
+          <p> - If your lawn does require watering, do so when the temperature in cool.</p>
+          <p> - Water in several short sessions, rather than one large one, in order for your lawn to better absorb moisture and avoid runoff.</p>
+          <p> - Use a broom or blower instead of a hose to clean leaves and debris from your driveway or sidewalk.</p>
+          <p> - Avoid leaving sprinklers or hoses unatteneded.</p>
+          <p> - In extreme drought, allow lawns to die in favor of preserving trees and large shrubs.</p>
+        </div>
       </article>
     </section>
     <footer>
-      <p>&copy; 2020 Disaster Preperation Katherin Daggett</p>
+      <p>&copy; 2020 Disaster Preparation Katherin Daggett</p>
     </footer>
   </body>
 </html>

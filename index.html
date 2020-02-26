@@ -3,78 +3,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Disaster Preperation</title>
+    <title>Disaster Preparation</title>
     <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1 {
-      font-weight: bold;
-      font-size: 2em;
-    }
-
-    h2 {
-      background-color: #0D232E;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
-
-    nav {
-      float: left;
-      width: 30%;
-      background: #ccc;
-      padding: 20px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    article {
-      float: left;
-      padding: 20px;
-      width: 70%;
-      background-color: #f1f1f1;
-    }
-
-    section:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    footer {
-      background-color: #0D232E;
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-    @media (max-width: 600px) {
-      nav, article {
-        width: 100%;
-        height: auto;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
       }
-    }
+
+      h1 {
+        font-weight: bold;
+        font-size: 2em;
+      }
+
+      h2 {
+        background-color: #0D232E;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: absolute;
+        height: 100%;
+        overflow: auto;
+      }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li a.active {
+        background-color: #0D232E;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+      }
+
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      footer {
+        background-color: #0D232E;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
   </style>
   </head>
   <body>
     <div id="app">
     <header>
-      <h2>Disaster Perperation</h2>
+      <h2>Disaster Perparation</h2>
     </header>
     <section>
-      <nav>
         <ul>
-          <li><a href='index.html'>Home</a></li>
+          <li><a class="active" href='index.html'>Home</a></li>
           <li><a href="tornado.html">Tornado</a></li>
           <li><a href='hurricane.html'>Hurricane</a></li>
           <li><a href='earthquake.html'>Earthquake</a></li>
@@ -85,55 +94,56 @@
           <li><a href='blizzard.html'>Blizzard</a></li>
           <li><a href='drought.html'>Drought</a></li>
         </ul>
-      </nav>
+      <div style="margin-left:25%;padding:1px 16px;height:100px;">
       <article>
-        <h1>Disaster Preperation Kit</h1>
-          <p>A basic emergency supply kit could include the following recommended items:</p>
-          <pre>-Water: one gallon of water per person per day for at least three days,for drinking and sanitation.</pre>
-          <pre>-Food: at least a three-day supply of non-perishable food.</pre>
-          <pre>-Battery: powered or hand crank radio and a NOAA Weather Radio with tone alert.</pre>
-          <pre>-Flashlight</pre>
-          <pre>-First aid kit</pre>
-          <pre>-Extra batteries</pre>
-          <pre>-Whistle to signal for help.</pre>
-          <pre>-Dust mask to help filter contaminated air and plastic sheeting and duct tape to shelter-in-place.</pre>
-          <pre>-Moist towelettes, garbage bags and plastic ties for personal sanitation.</pre>
-          <pre>-Wrench or pliers to turn off utilities.</pre>
-          <pre>-Manual can opener for food.</pre>
-          <pre>-Local maps</pre>
-          <pre>-Cell phone with chargers and a backup battery.</pre>
+        <h1>Disaster Preparation Kit</h1>
+          <h3>A basic emergency supply kit could include the following recommended items:</h3>
+          <p>-Water: one gallon of water per person per day for at least three days,for drinking and sanitation.</p>
+          <p>-Food: at least a three-day supply of non-perishable food.</p>
+          <p>-Battery: powered or hand crank radio and a NOAA Weather Radio with tone alert.</p>
+          <p>-Flashlight</p>
+          <p>-First aid kit</p>
+          <p>-Extra batteries</p>
+          <p>-Whistle to signal for help.</p>
+          <p>-Dust mask to help filter contaminated air and plastic sheeting and duct tape to shelter-in-place.</p>
+          <p>-Moist towelettes, garbage bags and plastic ties for personal sanitation.</p>
+          <p>-Wrench or pliers to turn off utilities.</p>
+          <p>-Manual can opener for food.</p>
+          <p>-Local maps</p>
+          <p>-Cell phone with chargers and a backup battery.</p>
           <br></br>
 
-          <p>Additional Emergency Supplies</p>
-          <pre>-Prescription medications</pre>
-          <pre>-Non-Prescription medications</pre>
-          <pre>-Glasses and contact lens solution.</pre>
-          <pre>-Infant formula, bottles, diapers, wipes, diaper rash cream.</pre>
-          <pre>-Pet food and extra water for your pets.</pre>
-          <pre>-Cash or traveler's checks.</pre>
-          <pre>-Important family documents such as copies of insurance policies, identification and back account records saved electronically or in a <br> waterproof portable container.</pre>
-          <pre>-Sleeping bag or warm blanket for each person.</pre>
-          <pre>-Complete change of clothing appropriate for your climate and sturdy shoes.</pre>
-          <pre>-Household chlorine bleach and medicine dropper to disinfect water.</pre>
-          <pre>-Fire extinguisher</pre>
-          <pre>-Matches in a waterproof container.</pre>
-          <pre>-Feminine supplies and personal hygiene items.</pre>
-          <pre>-Mess kits, paper cups, plates, paper towels and plastic utensils.</pre>
-          <pre>-Paper and pencil</pre>
-          <pre>-Books, games, puzzles or other activities for children.</pre>
+          <h3>Additional Emergency Supplies</h3>
+          <p>-Prescription medications</p>
+          <p>-Non-Prescription medications</p>
+          <p>-Glasses and contact lens solution.</p>
+          <p>-Infant formula, bottles, diapers, wipes, diaper rash cream.</p>
+          <p>-Pet food and extra water for your pets.</p>
+          <p>-Cash or traveler's checks.</p>
+          <p>-Important family documents such as copies of insurance policies, identification and back account records saved electronically or in a  waterproof portable container.</p>
+          <p>-Sleeping bag or warm blanket for each person.</p>
+          <p>-Complete change of clothing appropriate for your climate and sturdy shoes.</p>
+          <p>-Household chlorine bleach and medicine dropper to disinfect water.</p>
+          <p>-Fire extinguisher</p>
+          <p>-Matches in a waterproof container.</p>
+          <p>-Feminine supplies and personal hygiene items.</p>
+          <p>-Mess kits, paper cups, plates, paper towels and plastic utensils.</p>
+          <p>-Paper and pencil</p>
+          <p>-Books, games, puzzles or other activities for children.</p>
           <br></br>
 
-          <p>Maintaining your kit</p>
-          <pre>-Keep canned food in a cool, dry place.</pre>
-          <pre>-Store based food in tightly closed plastic or metal containers.</pre>
-          <pre>-Replace expired items as needed.</pre>
-          <pre>-Re-think your needs every year and update your kit as your family's needs change.</pre>
+          <h3>Maintaining your kit</h3>
+          <p>-Keep canned food in a cool, dry place.</p>
+          <p>-Store based food in tightly closed plastic or metal containers.</p>
+          <p>-Replace expired items as needed.</p>
+          <p>-Re-think your needs every year and update your kit as your family's needs change.</p>
           <br></br>
 
-          <p>Kit Storage Locations</p>
-          <pre>-Home: Keep this kit is a designated place and have it ready in case you have to leave your home quickly. Make sure all family members <br> know where the kit is kept.</pre>
-          <pre>-Work: Be prepared to shelter at work for at least 24 hours. Your work kit should include food, water and other necessities like <br> medicine, as well as comfortable walking shoes, stored in a "grab and go" case.</pre>
-          <pre>-Vehicle: In case you are stranded, keep a kit of emergency supplies in your car.</pre>
+          <h3>Kit Storage Locations</h3>
+          <p>-Home: Keep this kit is a designated place and have it ready in case you have to leave your home quickly. Make sure all family members know where the kit is kept.</p>
+          <p>-Work: Be prepared to shelter at work for at least 24 hours. Your work kit should include food, water and other necessities like medicine, as well as comfortable walking shoes, stored in a "grab and go" case.</p>
+          <p>-Vehicle: In case you are stranded, keep a kit of emergency supplies in your car.</p>
+        </div>
       </article>
     </section>
     <footer>
