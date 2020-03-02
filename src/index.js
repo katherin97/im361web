@@ -4,7 +4,9 @@ import "./style.css";
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Chaos!'
+    message: 'Hello Chaos!',
+    currentPage: "home",
+    
   }
 });
 
