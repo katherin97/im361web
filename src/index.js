@@ -4,9 +4,19 @@ import "./style.css";
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Chaos!',
     currentPage: "home",
-    
+    disasterTypes: [
+      "home",
+      "tordano",
+      "hurricane",
+      "earthquake",
+      "tsunami",
+      "wildfire",
+      "volcano",
+      "flood",
+      "blizzard",
+      "drought"
+    ],
   }
 });
 
