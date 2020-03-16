@@ -59,7 +59,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #0D232E;
+  background-color: #00232E;
 }
 
 ul {
@@ -82,7 +82,7 @@ p {
 }
 
 footer {
-  background-color: #0D232E;
+  background-color: #00232E;
   padding: 10px;
   text-align: center;
   color: white;
